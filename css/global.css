@@ -18,6 +18,19 @@
   --semantic-error: #dc2626;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-size: 1.6rem;
+  overflow: hidden;
+}
+
+img,
+svg {
+  display: inline-block;
+  max-width: 100%;
 }
