@@ -4,7 +4,8 @@ select {
   width: 100%;
   padding: 1.2rem 1.6rem;
   font: inherit;
-  border: 0.1rem solid var(--stroke-default);
+  border: 0.2rem solid transparent;
+  outline: 0.1rem solid var(--stroke-default);
   border-radius: 0.8rem;
   appearance: none;
 }
@@ -27,7 +28,7 @@ input[type='date']:focus-within {
 input {
   &[disabled] {
     background-color: var(--surface-disabled);
-    border: 0.1rem solid var(--stroke-default);
+    border-color: var(--stroke-default);
     color: var(--text-primary);
   }
 
