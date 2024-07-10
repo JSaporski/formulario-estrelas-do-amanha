@@ -26,6 +26,14 @@ input[type='date']:focus-within {
   border: 0.2rem solid var(--stroke-highlight);
 }
 
+input {
+  &[disabled] {
+    background-color: var(--surface-disabled);
+    border: 0.1rem solid var(--stroke-default);
+    color: var(--text-primary);
+  }
+}
+
 input[type='date'] {
   position: relative;
 
@@ -49,4 +57,8 @@ input[type='date'] {
 select {
   background: url('../../assets/icons/arrow-down-01.svg') no-repeat center right
     1.6rem/2.4rem;
+}
+
+.input-wrapper:has([disabled]) {
+  opacity: 0.5;
 }
