@@ -6,7 +6,7 @@
   height: 16rem;
   padding-inline: 1.6rem;
   text-align: center;
-  border: 0.1rem dashed var(--stroke-default);
+  border: 0.2rem dashed var(--stroke-default);
   border-radius: 0.8rem;
 
   & > svg {
