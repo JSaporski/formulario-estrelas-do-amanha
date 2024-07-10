@@ -1,0 +1,42 @@
+.dropzone {
+  position: relative;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  height: 16rem;
+  padding-inline: 1.6rem;
+  text-align: center;
+  border: 0.1rem dashed var(--stroke-default);
+  border-radius: 0.8rem;
+
+  & > svg {
+    width: 4.8rem;
+    height: 4.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  & > p {
+    color: #a8a29e;
+  }
+
+  &:hover,
+  &:has(input:focus) {
+    border-width: 0.2rem;
+    border-color: var(--stroke-highlight);
+    background-color: var(--surface-secondary);
+
+    & svg path {
+      stroke: var(--stroke-highlight);
+    }
+
+    & p {
+      color: var(--text-tertiary);
+    }
+  }
+}
+
+input[type='file'] {
+  position: absolute;
+  height: 100%;
+  opacity: 0;
+}
