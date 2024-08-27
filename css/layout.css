@@ -3,6 +3,12 @@
   grid-template-columns: 51.25% 48.75%;
   height: 100dvh;
   overflow: hidden;
+
+  @media (width <= 56.25em) {
+    height: initial;
+    grid-template-columns: 1fr;
+    overflow: initial;
+  }
 }
 
 main,
@@ -16,6 +22,10 @@ main {
   & .main-container {
     max-width: 52.8rem;
     margin-left: auto;
+
+    @media (width <= 56.25em) {
+      margin-inline: auto;
+    }
   }
 
   & .back {
@@ -28,6 +38,11 @@ main {
   & h1 {
     margin-bottom: 0.8rem;
     font: 600 2.4rem/1.25 var(--font-family);
+  }
+
+  @media (width <= 56.25em) {
+    padding: 2.4rem;
+    overflow: initial;
   }
 }
 
@@ -50,6 +65,24 @@ aside {
 
     & span {
       color: var(--text-highlight);
+    }
+  }
+
+  @media (width <= 56.25em) {
+    order: -1;
+    padding: 2.4rem;
+
+    & h2,
+    & p {
+      display: none;
+    }
+
+    & .aside-container {
+      margin-inline: auto;
+
+      & header > img {
+        margin-inline: auto;
+      }
     }
   }
 }

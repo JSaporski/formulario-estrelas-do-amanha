@@ -23,4 +23,13 @@ fieldset + fieldset {
   display: flex;
   gap: 1.6rem;
   margin-top: 4.8rem;
+
+  @media (width <= 56.25em) {
+    flex-direction: column;
+    text-align: center;
+
+    .btn-secondary {
+      margin: initial;
+    }
+  }
 }
